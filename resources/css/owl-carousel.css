@@ -1,0 +1,58 @@
+main .blog {
+  background: url(../assets/Abstract01.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 50%;
+  background-size: 60%;
+  min-height: 85vh;
+  width: 100%;
+}
+
+main .blog .blog-post {
+  padding-top: 6em;
+}
+
+main .blog .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3em 2em;
+  box-shadow: 0.5em 0.9em 2em rgba(0, 0, 0, 0.2);
+}
+
+main .blog .blog-post .blog-content .blog-title {
+  padding: 2em 0;
+}
+
+main .blog .blog-post .blog-content .btn-blog {
+  padding: 0.7em 2em;
+  background: var(--sky);
+  margin: 0.5em;
+}
+
+main .blog .blog-post .blog-content span {
+  display: block;
+}
+
+section .custom-container .owl-nav {
+  position: absolute;
+  top:0;
+  margin: 1em auto;
+  width: 100%
+}
+
+section .custom-container .owl-nav .owl-nav-previous,
+section .custom-container .owl-nav .owl-nav-next {
+  color: var(--light-purple);
+  background: transparent;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  color: var(--dark-purple);
+  background:transparent;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  outline: none;
+}
+

@@ -1,0 +1,116 @@
+/* **** NAVBAR **** */
+
+nav.nav {
+  background: white;
+  padding: 0 2em;
+  height: 0em;
+  min-height: 4.5em;
+  width: 100vw;
+  overflow: hidden;
+  transition: min-height 0.4s ease-in-out;
+  position: fixed;
+  top: 0;
+  z-index:2;
+}
+
+.nav .nav-brand a {
+  padding: 0.8em 0;
+  display: block;
+  font-family: var(--Lexend);
+  font-size: 1.6em;
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+/* **** TOGGLE HAMBURGER MENU **** */
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0;
+  right: 7em;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7em 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4em;
+  color: var(--text-gray);
+}
+
+.nav.collapse {
+  min-height: 23em;
+}
+
+.nav.collapse .nav-link {
+  padding: 0.5em !important;
+}
+
+.nav.collapse .nav-account a{
+  padding: 1em 3em !important;
+}
+
+/* **** END OF MENU TOGGLING **** */
+
+.nav .nav-item {
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-item .nav-link {
+  padding: 1.4em 1em;
+  position: relative;
+  font-family: var(--Abel);
+  font-size: 1.1em;
+}
+
+.nav .nav-item .nav-link:hover {
+  background-color: var(--midnight);
+}
+
+.nav .nav-item .nav-link:hover a {
+  color: var(--white);
+}
+
+.nav .nav-btn {
+  background: var(--sky);
+
+}
+.nav .nav-account {
+  padding: .7em 0;
+  margin-right: 4em;
+}
+
+.nav .nav-account a:nth-child(1) {
+  margin-right: 1em;
+  font-family: var(--Abel);
+  font-size: 1.15em;
+}
+
+/* .nav .nav-account i:hover {
+  color: var(--social-icons);
+} */
+
+/*  **** MEDIA QUERIES **** */
+
+@media (max-width: 992px) {
+  .nav .nav-menu,
+  .nav .nav-item {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+}
+
+/* **** END OF MEDIA QUERIES **** */
+
+/* **** END OF NAVBAR **** */
