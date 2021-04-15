@@ -20,17 +20,15 @@
     />
   </head>
   <body>
-    
-    {{ View::make('layouts.header') }}
-    <!-- **** MAIN SECTION ****  -->
-    <main>
-    @yield('content')
+      {{ View::make('layouts.header') }}
+      <!-- **** MAIN SECTION ****  -->
+      <main>
+      @yield('content')
 
-    </main>
-    <!-- **** END OF MAIN SECTION **** -->
+      </main>
+      <!-- **** END OF MAIN SECTION **** -->
 
-    {{ View::make('layouts.footer') }}
-
+      {{ View::make('layouts.footer') }}
 
   <!-- Third party Javascript Files -->
   <script src="{{asset('js/app.js')}}"></script>

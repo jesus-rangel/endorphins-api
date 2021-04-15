@@ -16,8 +16,37 @@
             <input type="text" name="language_output" id="language_output" placeholder="Say it this way, Yoda would..." class="w-100 m-3 pb-5">
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <button:text class="btn btn-primary mb-3" id="submit">Go Yodish!</button:text>
+          </div>
+          
+        </div>
       </form>
    </div>
   </div>
 </div>
+<script>
+  const
+    input_box = document.getElementById('language_input'),
+    output_box = document.getElementById('language_output'),
+    submit_button = document.getElementById('submit');
+
+    
+    submit_button.addEventListener('click', () => {
+      let input = input_box.value;
+      console.log(input);
+      output_box.value = 'Loading...';
+
+      fetch(`https://api.funtranslations.com/translate/yoda.json?text=${input}`)
+        .then((response => response.json()))
+        .then(data => {
+          
+          output_box.value = data.contents.translated;
+          console.log(data.contents.translated);
+        });
+    });
+
+  // 
+</script>
 @endsection
