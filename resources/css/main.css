@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-/* **** GLOBAL CLASSES **** */
+/* **** GLOBAL CLASSES AND ATTRIBUTES **** */
 
 p {
   font-family: var(--Lexend);
@@ -66,9 +66,14 @@ button.btn {
   cursor: pointer;
 }
 
-/* **** END OF GLOBAL CLASSES **** */
+main {
+  margin-top: 5em;
+  min-height: 60vh;
+}
 
-/* **** SECTION **** */
+/* **** END OF GLOBAL CLASSES/ATTRIBUTES **** */
+
+/* **** MAIN INDEX SECTION **** */
 
 .site-title {
   background: url("../assets/Background-image.png");
@@ -79,7 +84,6 @@ button.btn {
 }
 
 .site-title .site-background {
-  padding-top: 10em;
   text-align: center;
   color: var(--white);
 }
@@ -197,3 +201,11 @@ section .blog .custom-container {
     display: none;
   }
 }
+
+/* **** Translator Section **** */
+
+/* .translator-image-container {
+  max-height: 25vh;
+} */
+
+/* **** End of Translator Section **** */
