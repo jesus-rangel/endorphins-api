@@ -33,20 +33,15 @@
     submit_button = document.getElementById('submit');
 
     
-    submit_button.addEventListener('click', () => {
-      let input = input_box.value;
-      console.log(input);
-      output_box.value = 'Loading...';
+  submit_button.addEventListener('click', () => {
+    let input = input_box.value;
+    output_box.value = 'Loading...';
 
-      fetch(`https://api.funtranslations.com/translate/yoda.json?text=${input}`)
-        .then((response => response.json()))
-        .then(data => {
-          
-          output_box.value = data.contents.translated;
-          console.log(data.contents.translated);
-        });
+    fetch(`https://api.funtranslations.com/translate/yoda.json?text=${input}`)
+      .then((response => response.json()))
+      .then(data => {
+        output_box.value = data.contents.translated;
     });
-
-  // 
+  });
 </script>
 @endsection
